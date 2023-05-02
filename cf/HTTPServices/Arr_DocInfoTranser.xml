@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<HTTPService uuid="6912d272-9812-48ad-acaa-d06f34d6cf47">
+		<Properties>
+			<Name>Arr_DocInfoTranser</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Arr_Documentation informaton transfer</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>arrdif</RootURL>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>600</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="10cf2940-d44f-49e4-8537-b9cbff530677">
+				<Properties>
+					<Name>ping</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ping</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/ping</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="f9c0d232-1a5e-458b-b72e-85e99fff2836">
+						<Properties>
+							<Name>returnresponse</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Returnresponse</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>pingreturnresponse</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="0007da78-f9d6-43c3-bae3-b1b23e1a102b">
+				<Properties>
+					<Name>getinfo</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Getinfo</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/v1/{ИмяМетода}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="709ff475-d04b-4219-8268-b5cc4d16855f">
+						<Properties>
+							<Name>GET_gate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET gate</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>v1GET_gate</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="87f9f9a7-b5b6-47ea-9c9f-d83a780b37d9">
+				<Properties>
+					<Name>POST_getinfospecial</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>POST getinfospecial</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/v2/{ИмяМетода}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="68d7f4aa-0052-4329-8ac0-fcb2568a2db0">
+						<Properties>
+							<Name>POST_Gate</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST gate</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>v2POST_gate</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>
